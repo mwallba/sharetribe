@@ -59,6 +59,20 @@ default: &default_settings
   #
   asset_host:
 
+  # Your user-uploaded assets CDN distribution host name, including the desired protocol (http or https).
+  #
+  # Host for serving user-uploaded assets from, instead of straight from the S3 bucket specified above,
+  # or locally if no S3 bucket is given.
+  #
+  # When left blank, user assets URLs point to the S3 bucket or the Sharetribe URL, depending on the
+  # setting of 's3_bucket_name' above.
+  #
+  # Examples values:
+  #
+  # - https://yourdistribution.cloudfront.com
+  #
+  user_assets_host:
+
   # AWS keys
   aws_access_key_id:
   aws_secret_access_key:
